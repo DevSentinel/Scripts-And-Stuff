@@ -1,4 +1,4 @@
--- yurrrrrr why u here??? LOL
+-- Why are you here? LOL
 
 _Kgcv1XgpNj8HO78X, Protected_by_MoonSecV2, Discord = 'discord.gg/gQEH2uZxUk'
 

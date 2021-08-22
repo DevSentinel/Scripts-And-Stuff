@@ -24,22 +24,6 @@ NotifyUser:SetCore("SendNotification", {
 	Duration = 0.8;
 })
 
-wait(1)
-
-NotifyUser:SetCore("SendNotification", {
-	Title = "Bedwars Combo";
-	Text = "Valid Exploit Detected: [".. exploit_type.. "]";
-	Icon = "rbxassetid://4914902889";
-	Duration = 3;
-})
-
-NotifyUser:SetCore("SendNotification", {
-	Title = "Bedwars Combo";
-	Text = "Made By Bleedo";
-	Icon = "rbxassetid://4914902889";
-	Duration = 3;
-})
-
 if KRNL_LOADED then getgenv().syn = nil end
 local exploit_type
 if syn then
@@ -161,4 +145,20 @@ else
 end
 if true then
 	warn("[Bedwars Combo] [Info] Your Executor is: [".. exploit_type.. "]")
+
+    wait(1)
+
+    NotifyUser:SetCore("SendNotification", {
+        Title = "Bedwars Combo";
+        Text = "Valid Exploit Detected: [".. exploit_type.. "]";
+        Icon = "rbxassetid://4914902889";
+        Duration = 3;
+    })
+
+    NotifyUser:SetCore("SendNotification", {
+        Title = "Bedwars Combo";
+        Text = "Made By Bleedo";
+        Icon = "rbxassetid://4914902889";
+        Duration = 3;
+    })
 end

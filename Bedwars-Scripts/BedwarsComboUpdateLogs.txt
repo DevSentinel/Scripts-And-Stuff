@@ -1,0 +1,27 @@
+[+] V1.0.0
+- Initial Release
+
+[+] V1.0.1
+- Added KRNL Support
+- Auto Updater
+
+[+] V1.0.2
+- Fixed Errors
+- Fixed SW Support
+
+[+] V1.0.3
+- Added Semi Error Handler
+- Fixed Script
+- Unpatched Remove CPS Cap
+
+[+] V1.0.4 [NOW]
+- Fixed Bedaura for KRNL
+- Unpatched Scripts
+- New Synapse X And SW Script [NOBOLINE]
+- New KRNL Script [RBXHUB]
+- Fixed Error Handling
+- Fixed Crashes
+- Fixed KRNL Support
+- Fixed Auto Updater
+- Fixed Key Updater for KRNL
+

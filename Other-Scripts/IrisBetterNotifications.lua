@@ -1,3 +1,6 @@
+-- yw, removes ads :P
+getgenv()["IrisAd"] = true
+
 local NotificationTable = {};
 local Done = true;
 local TweenService = game:GetService("TweenService");

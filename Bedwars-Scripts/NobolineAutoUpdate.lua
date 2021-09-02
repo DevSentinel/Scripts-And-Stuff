@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://dogix.wtf/scripts/noboline/7709aec8-70df-45fe-b075-ac2097dbb5ac"))()
+loadstring(game:HttpGet'https://dogix.wtf/scripts/noboline/1c447d04-10ac-4fae-a010-8905d7fafb61')()

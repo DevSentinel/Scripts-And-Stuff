@@ -1,4 +1,4 @@
--- yw, removes ads :P
+-- just removes ads lol
 getgenv()["IrisAd"] = true
 
 local NotificationTable = {};

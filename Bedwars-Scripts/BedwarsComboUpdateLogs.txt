@@ -14,7 +14,7 @@
 - Fixed Script
 - Unpatched Remove CPS Cap
 
-[+] V1.0.4 [NOW]
+[+] V1.0.4
 - Fixed Bedaura for KRNL
 - Unpatched Scripts
 - New Synapse X And SW Script [NOBOLINE]
@@ -25,3 +25,10 @@
 - Fixed Auto Updater
 - Fixed Key Updater for KRNL
 
+[+] V1.0.5 [NOW]
+- Added New Script To KRNL [Vape V4]
+- Removed RBXHUB KRNL (Patched BW Hub)
+- Removed Instant Bed Aura for KRNL
+- Updated To Newest Version Of Noboline
+- Fixed Script-Ware Support
+- Fixed Crashes/Errors/Bugs

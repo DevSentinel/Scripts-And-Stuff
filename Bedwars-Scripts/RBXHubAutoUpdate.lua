@@ -1,4 +1,4 @@
--- removed support because its now patched but heres the file.
+-- open source'd auto update because theres no longer support for rbx hub since its patched.
 
 local FileIsLocated = isfile("WhiteKey.lua")
 

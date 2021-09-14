@@ -1,3 +1,5 @@
+-- removed support because its now patched but heres the file.
+
 local FileIsLocated = isfile("WhiteKey.lua")
 
 if not FileIsLocated then

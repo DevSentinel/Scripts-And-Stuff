@@ -1,4 +1,4 @@
-print("Modified by DevSentinel")
+-- Game is loaded check --
 
 if game.PlaceId == 8542275097 or game.PlaceId == 8592115909 then
     repeat
@@ -8,8 +8,38 @@ else
     return
 end
 
+-- MAIN
+local NotifyUser = game:GetService("StarterGui")
+
+print("     :::     ::::    ::: ::::::::::: :::::::::::          :::     :::::::::: :::    ::: ")
+print("   :+: :+:   :+:+:   :+:     :+:         :+:            :+: :+:   :+:        :+:   :+:  ")
+print("  +:+   +:+  :+:+:+  +:+     +:+         +:+           +:+   +:+  +:+        +:+  +:+   ")
+print(" +#++:++#++: +#+ +:+ +#+     +#+         +#+          +#++:++#++: :#::+::#   +#++:++    ")
+print(" +#+     +#+ +#+  +#+#+#     +#+         +#+          +#+     +#+ +#+        +#+  +#+   ")
+print(" #+#     #+# #+#   #+#+#     #+#         #+#          #+#     #+# #+#        #+#   #+#  ")
+print(" ###     ### ###    ####     ###     ###########      ###     ### ###        ###    ### ")
+print("  ")
+print(" [Skywars] [Info] Made by Fern, Modified by DevSentinel")
+print("  ")
+print(" [Skywars] [Info] Imported Console Lib.")
+print(" [Skywars] [Info] Loaded Anti AFK script.")
+
+NotifyUser:SetCore("SendNotification", {
+    Title = "Skywars";
+    Text = "Anti AFK has Loaded!";
+    Icon = "rbxassetid://4914902889";
+    Duration = 5;
+})
+
 -- Creating this part so that the autowin doesent bug out with the chests:
 wait(5)
+
+NotifyUser:SetCore("SendNotification", {
+    Title = "Skywars";
+    Text = "Autowin has started!";
+    Icon = "rbxassetid://4914902889";
+    Duration = 5;
+})
 
 game:GetService("StarterGui"):SetCoreGuiEnabled(Enum.CoreGuiType.PlayerList, true)
 local a = queue_on_teleport or syn.queue_on_teleport
@@ -237,7 +267,7 @@ repeat
     wait()
 until IsAlive(b)
 local F = tick()
-n("Autowin Started", "Made by Fern#5747 v" .. d)
+n("Autowin Started", "Modified by DevSentinel v" .. d)
 -- Creating this part so that the autowin doesent bug out with the chests:
 wait(4)
 a([[loadstring(game:HttpGet("https://raw.githubusercontent.com/DevSentinel/Scripts-And-Stuff/main/Skywars-Scripts/SkywarsAutowin.lua", true))()]])

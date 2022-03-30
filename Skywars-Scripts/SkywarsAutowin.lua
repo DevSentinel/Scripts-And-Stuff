@@ -9,7 +9,7 @@ else
 end
 
 -- Creating this part so that the autowin doesent bug out with the chests:
-wait(3)
+wait(5)
 
 game:GetService("StarterGui"):SetCoreGuiEnabled(Enum.CoreGuiType.PlayerList, true)
 local a = queue_on_teleport or syn.queue_on_teleport
@@ -239,7 +239,7 @@ until IsAlive(b)
 local F = tick()
 n("Autowin Started", "Made by Fern#5747 v" .. d)
 -- Creating this part so that the autowin doesent bug out with the chests:
-wait(2)
+wait(4)
 a([[loadstring(game:HttpGet("https://raw.githubusercontent.com/DevSentinel/Scripts-And-Stuff/main/Skywars-Scripts/SkywarsAutowin.lua", true))()]])
 local C = 0
 repeat

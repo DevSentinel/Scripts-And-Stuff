@@ -1,3 +1,5 @@
+print("Modified by DevSentinel")
+
 if game.PlaceId == 8542275097 or game.PlaceId == 8592115909 then
     repeat
         wait()

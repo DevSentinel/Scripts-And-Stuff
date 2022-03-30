@@ -1,6 +1,3 @@
--- Creating this part so that the autowin doesent bug out with the chests:
-wait(3)
-
 print("Modified by DevSentinel")
 
 if game.PlaceId == 8542275097 or game.PlaceId == 8592115909 then
@@ -10,6 +7,10 @@ if game.PlaceId == 8542275097 or game.PlaceId == 8592115909 then
 else
     return
 end
+
+-- Creating this part so that the autowin doesent bug out with the chests:
+wait(3)
+
 game:GetService("StarterGui"):SetCoreGuiEnabled(Enum.CoreGuiType.PlayerList, true)
 local a = queue_on_teleport or syn.queue_on_teleport
 local b = game.Players.LocalPlayer
@@ -237,6 +238,8 @@ repeat
 until IsAlive(b)
 local F = tick()
 n("Autowin Started", "Made by Fern#5747 v" .. d)
+-- Creating this part so that the autowin doesent bug out with the chests:
+wait(2)
 a([[loadstring(game:HttpGet("https://raw.githubusercontent.com/DevSentinel/Scripts-And-Stuff/main/Skywars-Scripts/SkywarsAutowin.lua", true))()]])
 local C = 0
 repeat

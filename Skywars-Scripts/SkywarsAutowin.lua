@@ -232,7 +232,7 @@ repeat
 until IsAlive(b)
 local F = tick()
 n("Autowin Started", "Made by Fern#5747 v" .. d)
-a([[loadstring(game:HttpGet("https://raw.githubusercontent.com/Kelvinouo/Hub/master/skywars_autowin.lua", true))()]])
+a([[loadstring(game:HttpGet("https://raw.githubusercontent.com/DevSentinel/Scripts-And-Stuff/main/Skywars-Scripts/SkywarsAutowin.lua", true))()]])
 local C = 0
 repeat
     for E, m in next, workspace.BlockContainer.Map.Chests:GetChildren() do

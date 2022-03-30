@@ -1,3 +1,6 @@
+-- Creating this part so that the autowin doesent bug out with the chests:
+wait(3)
+
 print("Modified by DevSentinel")
 
 if game.PlaceId == 8542275097 or game.PlaceId == 8592115909 then

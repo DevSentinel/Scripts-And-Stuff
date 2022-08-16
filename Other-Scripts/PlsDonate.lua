@@ -147,7 +147,7 @@ while wait() do
     wait(1)
     counter = counter + 1
     --Server hops after 1800 seconds (30 minutes)
-    if counter >= 1800 then
+    if counter >= 3 then
     --Random wait time in case of interference from alts
         wait(math.random(1, 60))
             local Servers = game.HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/8737602449/servers/Public?sortOrder=Desc&limit=100"))

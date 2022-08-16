@@ -1,5 +1,4 @@
 local ServerHopTime = 900 -- IN SECONDS
-getgenv().Webhook = "https://discord.com/api/webhooks/1008921790497706054/EY1b5a5bsAX2yd91h6DhaJLOLFvd_LKUIawTAWLOw0N_bfI63b2z18_989_f3_BI00R4"
 
 repeat
 	wait()
@@ -25,53 +24,6 @@ else
 		Duration = 15
 	})
 end
-
--- Discord Webhook TEXTBOX
-
--- Instances:
-
-local Webhook = Instance.new("ScreenGui")
-local WebhookFrame = Instance.new("Frame")
-local FrameCorner = Instance.new("UICorner")
-local FrameStroke = Instance.new("UIStroke")
-local TextBox = Instance.new("TextBox")
-local TextStroke = Instance.new("UIStroke")
-
---Properties:
-
-Webhook.Name = "Webhook"
-Webhook.Parent = game.CoreGui
-Webhook.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-WebhookFrame.Name = "WebhookFrame"
-WebhookFrame.Parent = Webhook
-WebhookFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-WebhookFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-WebhookFrame.Position = UDim2.new(0.49962461, 0, 0.87832123, 0)
-WebhookFrame.Size = UDim2.new(0, 217, 0, 35)
-
-FrameCorner.Name = "FrameCorner"
-FrameCorner.Parent = WebhookFrame
-FrameCorner.CornerRadius = UDim.new(0, 8)
-
-FrameStroke.Name = "FrameStroke"
-FrameStroke.Parent = WebhookFrame
-FrameStroke.Thickness = 3
-
-TextBox.Parent = WebhookFrame
-TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextBox.BackgroundTransparency = 1.000
-TextBox.ClipsDescendants = true
-TextBox.Size = UDim2.new(0, 217, 0, 35)
-TextBox.Font = Enum.Font.Roboto
-TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextBox.TextScaled = true
-TextBox.TextSize = 14.000
-TextBox.TextWrapped = true
-
-FrameStroke.Name = "TextStroke"
-FrameStroke.Parent = TextBox
-FrameStroke.Thickness = 0.6
 
 local Unclaimed = {}
 local Counter
@@ -160,8 +112,7 @@ while true do
 	local BoothText
 	
 	--Waits for a donation
-	local RaisedC = Players.LocalPlayer.leaderstats.Raised.value
-	while (Players.LocalPlayer.leaderstats.Raised.value == RaisedC) do
+	while true do
 		wait(1)
 		Counter = Counter + 1
 		--Server hops after 1800 seconds (30 minutes)
@@ -176,29 +127,7 @@ while true do
 			end
 		end
 	end
-	
-	--Checks for Discord Webhook
-	if getgenv().webhook then
-		local LogService = game:GetService("LogService")
-		local logs = LogService:GetLogHistory()
-		local donation
-		--Tries to grabs donation message from logs
-		if string.find(logs[#logs].message, game:GetService("Players").LocalPlayer.Name) then
-			donation = tostring(logs[#logs].message.. " (Total: ".. Players.LocalPlayer.leaderstats.Raised.value.. ")")
-		else
-			donation = tostring("💰 Somebody tipped ".. Players.LocalPlayer.leaderstats.Raised.value - RaisedC.. " Robux to ".. game:GetService("Players").LocalPlayer.Name.. " (Total: " .. Players.LocalPlayer.leaderstats.Raised.value.. ")")
-		end
-
-		--Sends to webhook
-		local request = http_request or request or HttpPost or syn.request
-		request({
-			Url = getgenv().Webhook,
-			Body = game:GetService("HttpService"):JSONEncode({["content"] = donation}),
-			Method = "POST",
-			Headers = {["content-type"] = "application/json"}
-		})
-	end
 
 	--30 second wait so the booth doesn't update instantly
-	wait(30)
+	wait(2.5)
 end

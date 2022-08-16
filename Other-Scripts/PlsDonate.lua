@@ -1,4 +1,4 @@
-local ServerHopTime = 900 -- IN SECONDS
+local ServerHopTime = 3 -- IN SECONDS
 
 repeat
 	wait()

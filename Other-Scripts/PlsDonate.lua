@@ -17,7 +17,7 @@ wait(5)
 
 -- Check Executor
 if string.find(identifyexecutor(), "Synapse X") then
-	syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/tzechco/roblox-scripts/main/PLS%20DONATE/autofarm.lua'))()")
+	syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/DevSentinel/Scripts-And-Stuff/main/Other-Scripts/PlsDonate.lua'))()")
 else
 	game.StarterGui:SetCore("SendNotification", {
 		Title = "Not using Synapse X",
